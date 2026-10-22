@@ -184,6 +184,9 @@
 
         // إرسال البيانات إلى بوت تلغرام
         tg.sendData(JSON.stringify(formData));
+        
+        // إغلاق نافذة الـ Web App تلقائياً بعد الإرسال
+        tg.close();
     }
 </script>
 
